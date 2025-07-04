@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <H1>GALLERY</H1>
+    <img src="earth.jpeg" alt="a" id="a">
+    <img src="jupiter.png" alt="b" height="140" id="b">
+    <img src="mars.jpg" alt="c" height="140" width="250" id="c">
+    <H1>BUTTONS</H1>
+    <button onclick="f1()">1</button>
+    <button onclick="f2()">2</button>
+    <button onclick="f3()">3</button>
+    <button onclick="f4()">1&2</button>
+    <button onclick="f5()">1&3</button>
+    <button onclick="f6()">2&3</button>
+    <button onclick="f7()">Show All</button>
+    <button onclick="f8()">Hide All</button>
+    <button onclick="z()" id="done">test</button>
+    <script>
+        function z(){
+            alert("test done!")
+        }
+        function f1(){
+            document.getElementById("a").hidden=false
+            document.getElementById("b").hidden=true
+            document.getElementById("c").hidden=true
+        }
+        function f2(){
+            document.getElementById("a").hidden=true
+            document.getElementById("b").hidden=false
+            document.getElementById("c").hidden=true
+        }
+        function f3(){
+            document.getElementById("a").hidden=true
+            document.getElementById("b").hidden=true
+            document.getElementById("c").hidden=false
+        }
+        function f4(){
+            document.getElementById("a").hidden=false
+            document.getElementById("b").hidden=false
+            document.getElementById("c").hidden=true
+        }
+        function f5(){
+            document.getElementById("a").hidden=false
+            document.getElementById("b").hidden=true
+            document.getElementById("c").hidden=false
+        }
+        function f6(){
+            document.getElementById("a").hidden=true
+            document.getElementById("b").hidden=false
+            document.getElementById("c").hidden=false
+        }
+        function f7(){
+            document.getElementById("a").hidden=false
+            document.getElementById("b").hidden=false
+            document.getElementById("c").hidden=false
+        }
+        function f8(){
+            document.getElementById("a").hidden=true
+            document.getElementById("b").hidden=true
+            document.getElementById("c").hidden=true
+        }
+    </script>
+</body>
+</html>
